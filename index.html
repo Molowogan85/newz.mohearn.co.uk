@@ -1,23 +1,1150 @@
-<!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this file,
-   - You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; object-src 'none'; script-src resource: chrome:; connect-src https:; img-src https: data: blob:; style-src 'unsafe-inline';">
-    <title data-l10n-id="newtab-page-title"></title>
-    <link rel="icon" type="image/png" href="chrome://branding/content/icon32.png"/>
-    <link rel="localization" href="branding/brand.ftl" />
-    <link rel="localization" href="browser/branding/brandings.ftl" />
-    <link rel="localization" href="browser/newtab/newtab.ftl" />
-    <link rel="stylesheet" href="chrome://browser/content/contentSearchUI.css" />
-    <link rel="stylesheet" href="resource://activity-stream/css/activity-stream.css" />
-  </head>
-  <body class="activity-stream">
-    <div id="header-asrouter-container" role="presentation"></div>
-    <div id="root"></div>
-    <div id="footer-asrouter-container" role="presentation"></div>
-  </body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+		
+	<title>Newz.mohearn.co.uk: All Tech - All The Time</title>
+	<meta name="title" content="Newz.mohearn.co.uk: All Tech - All The Time" />
+	<meta name="description" content="The most important technology news, developments and trends with insightful analysis and commentary. Coverage includes computer hardware, software, mobile apps and devices, personal technology, cybersecurity and emerging tech for businesses and consumers." />
+	<meta name="keywords" content="technology, news, wireless, databases, data storage, mobile, developer, open source, cybersecurity, computer networks, cloud computing" />
+	<link rel="shortcut icon" href="/images/tnw_favicon.ico" type="image/x-icon" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/perl/syndication/rssfull.pl" />
+	<link rel="alternate" type="application/rss+xml" title="Podcasts" href="http://www.ectnews.com/data/podcast.xml" />
+	<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1;" />
+
+	<meta name="viewport" content="width=device-width, maximum-scale=1" />
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="/shared/general.css" />
+	<link rel="stylesheet" type="text/css" media="screen"  title="screensheet" href="/shared/tnwscreen.css" />
+	<link rel="stylesheet" type="text/css" href="/shared/mobilescreen.css" media="only screen and (max-width:480px)" />
+
+	<link rel="alternate stylesheet" type="text/css" media="screen" title="printsheet" href="/shared/print.css" />
+	<link rel="stylesheet" type="text/css" media="print"  href="/shared/general.css" />
+	<link rel="stylesheet" type="text/css" media="print"  href="/shared/print.css" />
+	<link rel="stylesheet" href="/shared/ajax/colorbox/colorbox.css" type="text/css" />
+	<link rel="stylesheet" href="/shared/ajax/ui-lightness/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+
+
+	<script type="text/javascript" src="//www.ectnews.com/shared/ajax/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//www.ectnews.com/shared/ajax/jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/javascript" src="//www.ectnews.com/shared/ajax/colorbox/jquery.colorbox-min.js"></script>
+	<script type="text/javascript" src="//www.ectnews.com/shared/general-jquery.js"></script>
+		<script type="text/javascript"><!--//<![CDATA[
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+      var gads = document.createElement("script");
+      gads.async = true;
+      gads.type = "text/javascript";
+      var useSSL = "https:" == document.location.protocol;
+      gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+      var node =document.getElementsByTagName("script")[0];
+      node.parentNode.insertBefore(gads, node);
+     })();
+	//]]>//--></script>
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-9357282-1');
+	ga('send', 'pageview');
+	</script>
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '535191343593734');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=535191343593734&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+</head>
+<body>
+<div id="fb-root"></div>
+<script type="text/javascript"><!--//<![CDATA[
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=502379303161829";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));//]]>//--></script>
+
+
+
+
+	<!--ps: 200 crid: 10327:a-cc-ecminute-signup_topnav-1 cc:ng s_c: px:0-->
+	<style type="text/css">
+div#tnavad a, div#tnavad a:visited, div#tnavad a:hover { color: #323232 !important; }
+</style>
+<div id="tnavad" style="background-color:#f3f3f3;font-size:18px;padding:10px 0px;font-weight:400;font-family:roboto;letter-spacing:2px;"><a href="" onclick=" { ENN_ad_wo(10327,'15955641353748','https://www.technewsworld.com/'); return false; }" onmouseover="status='https://lp.constantcontactpages.com/su/axVwPYf/EcommerceMinute'; return true;" onmouseout="status=''; return true;"   >Get the E-Commerce Minute Newsletter from the E-Commerce Times &raquo; View Sample | Subscribe</a></div>
+	<img class="ct-10327-a-cc-ecminute-signup_topnav-1" src="/adsys/count/10327/?nm=a-cc-ecminute-signup_topnav-1&amp;ENN_rnd=15955641353748&amp;ign=0/ign.gif" width="0" height="0" alt="" style="position:absolute; left:0px; top:0px" />
+	<!--/ps: 200 crid: 10327:a-cc-ecminute-signup_topnav-1 cc:ng-->
+	
+<div id="tnav">
+
+	<div id="top-sitelinks" style="float:right">
+	<a href="https://www.ecommercetimes.com/">E-BUSINESS</a> | <a href="https://www.technewsworld.com/">TECHNOLOGY</a> |  <a href="https://www.crmbuyer.com/">CRM</a> | <a href="https://www.linuxinsider.com/">LINUX</a> | <a href="https://www.ectnews.com/" id="toprow-ennlink">ECTNEWS.COM</a>
+	</div>
+	Welcome Guest | <a href='/perl/User.pl'>Sign In</a>
+</div>
+<div id="container-outer">
+<div id="container">
+<script type="text/javascript" language="JavaScript"><!--//<![CDATA[
+ENN_site = 'tnw';
+//]]>//--></script>
+
+<div id="toprow">
+
+	<a href="/"><img src="/images/2014/tnw-logo.png"  border="0" align="left" alt="TechNewsWorld.com" /></a>
+
+	<div id="adtitle" class="adtitle" style="padding-top:13px">
+	
+	<!--ps: 65 crid: 10293:a-emg_tnw_728-1 cc:ng s_c:10327 px:0-->
+	<script type="text/javascript"><!--//<![CDATA[
+  var ados = ados || {};
+  ados.run = ados.run || [];
+  /* load placement for account: Neudesic Media Group, site: TechNewsWorld, size: 728x90 - Leaderboard */
+  ados.run.push(function() {
+    ados_addInlinePlacement(2072, 758477, 4).setRedirectUrl('-optional-click-macro-').loadInline();
+  });
+//]]>//--></script>
+<script type="text/javascript" src="https://static.adzerk.net/ados.js"><!--//<![CDATA[//]]>//--></script>
+	<img class="ct-10293-a-emg_tnw_728-1" src="/adsys/count/10293/?nm=a-emg_tnw_728-1&amp;ENN_rnd=15955641353487&amp;ign=0/ign.gif" width="0" height="0" alt="" style="position:absolute; left:0px; top:0px" />
+	<!--/ps: 65 crid: 10293:a-emg_tnw_728-1 cc:ng-->
+	
+	</div>
+	
+</div>		
+<div class="printlogo"><a href="/"><img id="printlogo" src="/images/2014/tnw-logo.png" border="0" alt="" /></a></div>
+
+<div id="topwrapper">
+<div id="infospace">
+	<div class="shim">
+	<div id="infoslogo" style="display:none;float:left;">
+	<a href="/"><img src="/images/2014/260x40-tnw.gif" width="260" height="40" border="0" /></a>
+	</div>
+	<form class="searchspace" method="get" action="/perl/search.pl" >
+	<input type="image" class="searchbutton" src="/images/2014/magnifying-glass_23x19.png" alt="Search" /> <input type="text" id="sitesearch" name="query" class="searchbox" />
+	<div class="auto_complete" id="sitesearch_auto_complete"></div>
+	</form>
+	Front Page
+	</div>
+</div>
+
+	<div id="topmenubar">
+	<div id="topmenubar-shim" class="shim">
+	<ul>
+		<li><a href="https://www.technewsworld.com/perl/section/computing/">Computing</a>
+		<ul>
+		<li><a href="https://www.technewsworld.com/perl/section/software/">Applications</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/data-management/">Data Management</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/hardware/">Hardware</a>
+			<ul>
+			<li><a href="https://www.technewsworld.com/perl/section/chips/">Chips</a></li>
+			<li><a href="https://www.technewsworld.com/perl/section/personal-computers/">Personal Computers</a></li>
+			<li><a href="https://www.technewsworld.com/perl/section/servers/">Servers</a></li>
+			</ul>
+		</li>
+		<li><a href="https://www.technewsworld.com/perl/section/operating-systems/">Operating Systems</a></li>
+		</ul>
+	</li>
+
+	<li><a href="https://www.technewsworld.com/perl/section/internet/">Internet</a>
+		<ul>
+		<li><a href="https://www.technewsworld.com/perl/section/internet-of-things/">Internet of Things</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/online-entertainment/">Online Entertainment</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/search-tech/">Search Tech</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/social-networking/">Social Networking</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/web-apps/">Web Apps</a></li>
+		</ul>
+	</li>
+
+	<li><a href="https://www.technewsworld.com/perl/section/IT/">IT</a>
+		<ul>
+		<li><a href="https://www.technewsworld.com/perl/section/developers/">Developers</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/it-leadership/">IT Leadership</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/network-management/">Network Management</a></li>
+		</ul>
+	</li>
+
+	<li><a href="https://www.technewsworld.com/perl/section/mobile-tech/">Mobile Tech</a>
+		<ul>
+		<li><a href="https://www.technewsworld.com/perl/section/mobile-apps/">Mobile Apps</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/smartphones/">Smartphones</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/tablets/">Tablets</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/wearable-tech/">Wearable Tech</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/wireless-networking/">Wireless Networking</a></li>
+		</ul>
+	</li>
+
+	<li><a href="https://www.technewsworld.com/perl/section/reviews/">Reviews</a></li>
+
+	<li><a href="https://www.technewsworld.com/perl/section/tech-security/">Security</a>
+		<ul>
+		<li><a href="https://www.technewsworld.com/perl/section/cyber-security/">Cybersecurity</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/hacking/">Hacking</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/viruses-malware/">Malware</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/privacy/">Privacy</a></li>
+		</ul>
+	</li>
+
+	<li><a href="https://www.technewsworld.com/perl/section/technology/">Technology</a>
+		<ul>
+		<li><a href="https://www.technewsworld.com/perl/section/audio-video/">Audio/Video</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/emerging-tech/">Emerging Tech</a>
+			<ul>
+			<li><a href="https://www.technewsworld.com/perl/section/artificial-intelligence/">Artificial Intelligence</a></li>
+			<li><a href="https://www.technewsworld.com/perl/section/virtual-reality/">Virtual Reality</a></li>
+			</ul>
+		</li>
+		<li><a href="https://www.technewsworld.com/perl/section/gaming/">Gaming</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/home-tech/">Home Tech</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/how-to/">How-To</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/photography/">Photography</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/science/">Science</a>
+			<ul>
+			<li><a href="https://www.technewsworld.com/perl/section/med-tech/">Health</a></li>
+			<li><a href="https://www.technewsworld.com/perl/section/space/">Space</a></li>
+			</ul>
+		</li>
+		<li><a href="https://www.technewsworld.com/perl/section/tech-buzz/">Tech Buzz</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/law/">Tech Law</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/transportation/">Transportation</a></li>
+		<li><a href="https://www.technewsworld.com/perl/section/women-in-tech/">Women In Tech</a></li>
+
+		</ul>
+	</li>
+	<li><a href="/perl/section/tech-blog/">Tech Blog</a></li>
+	<li style="float: right; width: auto;">&nbsp;Reader Services&nbsp;
+	<ul>
+	<li><a href="https://www.ectnews.com/perl/User.pl">Account Management</a></li>
+	<li><a href="https://www.ectnews.com/perl/board/mboard.pl">Discussion</a></li>
+	<li><a href="https://www.ectnews.com/about/newsalerts/">News Alerts</a></li>
+	<li><a href="https://www.ectnews.com/perl/newsletter_registration.pl">Newsletters</a></li>
+	<li><a href="/perl/surveys">Reader Surveys</a></li>
+	<li><a href="https://www.ectnews.com/about/link-to-us.xhtml#rss">RSS / <img style="vertical-align:middle" src="/images/2004/xml_36x14.gif" border="0" alt='XML' /> Headline Feeds</a></li>
+	
+	
+	
+	<li><a href="https://www.ectnews.com/perl/search.pl">Search ECT News Network</a></li>
+	<li class="hrule"></li>
+	<li><a href="http://www.ectnews.com/about/network_map.xhtml">ECT News Network Map</a>
+		<ul>
+		<li><a href="https://www.crmbuyer.com/site_map/">CRM Buyer Site Map</a></li>
+		<li><a href="https://www.ecommercetimes.com/site_map/">E-Commerce Times Site Map</a></li>
+		<li><a href="https://www.linuxinsider.com/site_map/">LinuxInsider Site Map</a></li>
+		<li><a href="https://www.technewsworld.com/site_map/">TechNewsWorld Site Map</a></li>
+		</ul>
+	</li>
+	</ul>
+</li>
+
+
+	</ul>
+	</div>
+	</div>
+	<script type="text/javascript" language="JavaScript"><!--//<![CDATA[
+	new ENN_menu(document.getElementById("topmenubar-shim"));
+	//]]>//--></script>
+</div>
+
+
+<div id="middlewrapper">
+<div id="breadcrumb">
+<!--<div id="snav" style=""><a href="/perl/board/mboard.pl/">DISCUSSION</a> | <a href="/perl/newsletter_registration.pl/">NEWSLETTERS</a> | <a href="http://www.ectnews.com/perl/User.pl/">ACCOUNT MGMT</a></div>-->
+<div id="snav" style="">July 23, 2020 09:15:35 PM PDT</div>
+
+
+	<!-- bc -->
+	<span id="bcdata">
+	<a href="/">TechNewsWorld</a> &gt; Top Stories
+	 
+	</span>
+	<!-- /bc -->
+	
+</div>
+<!-- [% IF !NO_PRINTER_COPYRIGHT %] -->
+<script type="text/javascript"><!--//<![CDATA[
+document.write('<div class="printer-copyright">');
+document.write('Please note that this material is copyright protected. It is illegal to display or reproduce this article without permission for any commercial purpose, including use as marketing or public relations literature. ');
+document.write('To obtain reprints of this article for authorized use, please call a sales representative at (818) 461-9700 or visit <a href="http://www.ectnews.com/about/reprints/">http://www.ectnews.com/about/reprints/</a>.');
+document.write('</div>');
+//]]>//--></script>
+<!-- [% END %] -->
+
+
+
+<div id="content-main">
+	<div class="content-block">
+	<!-- content-main -->
+
+			<div class="story-list xlarge first shadow-big">
+			
+			<div class="title"><a href="/story/US-Cloud-Gaming-Subscriptions-Target-3B-86768.html"><!--title-->US Cloud Gaming Subscriptions Target $3B<!--/title--></a></div>
+			<div class="date">July 22, 2020</div>
+			<div class="image">
+			<a href="/story/US-Cloud-Gaming-Subscriptions-Target-3B-86768.html"><img alt="US subscription gaming revenues could be $3 billion" data-c="a" src="/article_images/story_graphics_xlarge/xl-2016-gaming-2.jpg" width="620" height="360" border="0" /></a>
+			
+<div class="graphic-credit"><img src="/images/2015/image-credit-adobe-stock_130x15.gif" alt="" /></div>
+
+			</div>
+			<!--1-->
+			<div class="teaser"><!--teaser-->Consumer interest in cloud gaming could boost annual subscription revenues to nearly US$3 billion, according to Parks Associates. There is renewed interest, the research firm's report noted, in gaming services that can stream over the Internet and deliver games to multiple platforms without downloads and without taxing local processing power.<!--/teaser--> <span class="story-link"><a class="story-link" href="/story/US-Cloud-Gaming-Subscriptions-Target-3B-86768.html">[More...]</a></span></div>
+			
+			</div>
+			 
+			<br />
+<div class="main-story-delimit"></div>
+
+			<div class="story-list xlarge shadow-big">
+			
+			<div class="title"><a href="/story/Windows-10X-to-Eliminate-Onboard-32-Bit-Apps-Report-86766.html"><!--title-->Windows 10X to Eliminate Onboard 32-Bit Apps: Report<!--/title--></a></div>
+			<div class="date">July 21, 2020</div>
+			<div class="image">
+			<a href="/story/Windows-10X-to-Eliminate-Onboard-32-Bit-Apps-Report-86766.html"><img alt="" src="/article_images/story_graphics_xlarge/xl-2016-microsoft-rumor-1.jpg" width="620" height="350" border="0" /></a>
+			 
+			</div>
+			<!--2-->
+			<div class="teaser"><!--teaser-->Windows 10X began as a streamlined operating system for the Surface Neo, a premium mobile device with two screens that opened like a book. Now Microsoft seems poised to use the OS to power laptop competitors to Google's highly successful Chromebook portables. 
+Absent however is ContainerOS, the technology used to run 32-bit Windows applications under Windows 10X, according to a report.<!--/teaser--> <span class="story-link"><a class="story-link" href="/story/Windows-10X-to-Eliminate-Onboard-32-Bit-Apps-Report-86766.html">[More...]</a></span></div>
+			
+			</div>
+			 
+			<br />
+<div class="main-story-delimit"></div>
+
+			<div class="story-list xlarge shadow-big">
+			
+			<div class="title"><span class="story-storytype">ANALYSIS</span><br /><a href="/story/The-Past-Present-and-Future-of-Attribute-Based-Encryption-86764.html"><!--title-->The Past, Present and Future of Attribute-Based Encryption<!--/title--></a></div>
+			<div class="date">July 21, 2020</div>
+			<div class="image">
+			<a href="/story/The-Past-Present-and-Future-of-Attribute-Based-Encryption-86764.html"><img alt="" data-c="a" src="/article_images/story_graphics_xlarge/xl-2016-encryption-1.jpg" width="620" height="350" border="0" /></a>
+			
+<div class="graphic-credit"><img src="/images/2015/image-credit-adobe-stock_130x15.gif" alt="" /></div>
+
+			</div>
+			<!--3-->
+			<div class="teaser"><!--teaser-->Encryption is an obscure but critical part of everyday life. That padlock in the address bar of the website you're visiting represents the 's' after 'http' -- which stands for the latest version of Transport Layer Security. Together with Secure Sockets Layer, which TLS replaced, these digital security technologies allow encrypted communication between two parties, such as web sites or servers, and web browsers.<!--/teaser--> <span class="story-link"><a class="story-link" href="/story/The-Past-Present-and-Future-of-Attribute-Based-Encryption-86764.html">[More...]</a></span></div>
+			
+			</div>
+			 
+			<br />
+<div class="main-story-delimit"></div>
+
+			<div class="story-list xlarge shadow-big">
+			
+			<div class="title"><span class="story-storytype">OPINION</span><br /><a href="/story/Why-Microsoft-Teams-Will-Be-the-De-Facto-Standard-for-Video-Collaboration-86761.html"><!--title-->Why Microsoft Teams Will Be the De Facto Standard for Video Collaboration<!--/title--></a></div>
+			<div class="date">July 20, 2020</div>
+			<div class="image">
+			<a href="/story/Why-Microsoft-Teams-Will-Be-the-De-Facto-Standard-for-Video-Collaboration-86761.html"><img alt="" src="/article_images/story_graphics_xlarge/xl-2020-wfh-1.jpg" width="620" height="360" border="0" /></a>
+			 
+			</div>
+			<!--4-->
+			<div class="teaser"><!--teaser-->I've been covering video conferencing since before we called it video conferencing. 
+It has been an exciting and somewhat painful technology to watch because it seemed like everyone in the segment fundamentally didn't understand that if you don't have interoperability and didn't focus on ease of use, it wouldn't work. Let's talk this week about why Microsoft Teams is trending to be the new standard for video collaboration.<!--/teaser--> <span class="story-link"><a class="story-link" href="/story/Why-Microsoft-Teams-Will-Be-the-De-Facto-Standard-for-Video-Collaboration-86761.html">[More...]</a></span></div>
+			
+			</div>
+			 
+			<br />
+<div class="main-story-delimit"></div>
+
+			<div class="story-list xlarge shadow-big">
+			
+			<div class="title"><a href="/story/3-Apps-to-Help-Golfers-Get-Into-the-Swing-of-Things-86755.html"><!--title-->3 Apps to Help Golfers Get Into the Swing of Things<!--/title--></a></div>
+			<div class="date">July 17, 2020</div>
+			<div class="image">
+			<a href="/story/3-Apps-to-Help-Golfers-Get-Into-the-Swing-of-Things-86755.html"><img alt="golf apps training and reservations" src="/article_images/story_graphics_xlarge/xl-2020-golfer-1.jpg" width="620" height="400" border="0" /></a>
+			 
+			</div>
+			<!--5-->
+			<div class="teaser"><!--teaser-->Sports performance technology continues to advance and gain popularity as high-tech tools are utilized to enhance player performance in all types of athletics. Golf is no exception. Technology can be used to make aspects of this popular and challenging sport less difficult and frustrating, and more rewarding and enjoyable. These three apps can help golfers improve their skills, locate courses, and book tee times to enjoy their next round.<!--/teaser--> <span class="story-link"><a class="story-link" href="/story/3-Apps-to-Help-Golfers-Get-Into-the-Swing-of-Things-86755.html">[More...]</a></span></div>
+			
+			</div>
+			 
+			<br />
+<div class="main-story-delimit"></div>
+
+			<div class="story-list xlarge shadow-big">
+			
+			<div class="title"><span class="story-storytype">LINUX PICKS AND PANS</span><br /><a href="/story/AutoTux-is-a-Real-Distro-With-a-No-Hands-Linux-Installer-86759.html"><!--title-->AutoTux is a Real Distro With a 'No Hands' Linux Installer<!--/title--></a></div>
+			<div class="date">July 17, 2020</div>
+			<div class="image">
+			<a href="/story/AutoTux-is-a-Real-Distro-With-a-No-Hands-Linux-Installer-86759.html"><img alt="autotux linux review" data-c="a" src="/article_images/story_graphics_xlarge/xl-2019-linux-1.jpg" width="620" height="360" border="0" /></a>
+			
+<div class="graphic-credit"><img src="/images/2015/image-credit-adobe-stock_130x15.gif" alt="" /></div>
+
+			</div>
+			<!--6-->
+			<div class="teaser"><!--teaser-->AutoTux is a fully automated Linux distribution that is literally a hands-off event from start to finish. It goes a long way to adopting Linux a no-brainer for Windows and macOS converts. Its self-installing approach is also the kind of Linux operating system that makes you wonder why more developers do not use similar strategies to make their Linux offerings such a foolproof proposition.<!--/teaser--> <span class="story-link"><a class="story-link" href="/story/AutoTux-is-a-Real-Distro-With-a-No-Hands-Linux-Installer-86759.html">[More...]</a></span></div>
+			
+			</div>
+			 
+			<br />
+<div class="main-story-delimit"></div>
+
+			<div class="story-list xlarge shadow-big">
+			
+			<div class="title"><a href="/story/Samsung-Reveals-6G-Vision-86758.html"><!--title-->Samsung Reveals 6G Vision<!--/title--></a></div>
+			<div class="date">July 15, 2020</div>
+			<div class="image">
+			<a href="/story/Samsung-Reveals-6G-Vision-86758.html"><img alt="samsung's vision for 6g" src="/article_images/story_graphics_xlarge/xl-2020-6g-1.jpg" width="620" height="380" border="0" /></a>
+			 
+			</div>
+			<!--7-->
+			<div class="teaser"><!--teaser-->Although many people haven't wrapped their minds around 5G mobile technology yet, Samsung has already started talking about 6G. In a report released Tuesday, the company reveals its 6G vision of the future, including technical and societal megatrends, new services, requirements, candidate technologies, and an expected timeline of standardization.<!--/teaser--> <span class="story-link"><a class="story-link" href="/story/Samsung-Reveals-6G-Vision-86758.html">[More...]</a></span></div>
+			
+			</div>
+			 
+			<br />
+<div class="main-story-delimit"></div>
+
+			<div class="story-list xlarge shadow-big">
+			
+			<div class="title"><a href="/story/Google-Clamps-Down-on-Ads-for-Spyware-Stalkerware-86756.html"><!--title-->Google Clamps Down on Ads for Spyware, Stalkerware<!--/title--></a></div>
+			<div class="date">July 14, 2020</div>
+			<div class="image">
+			<a href="/story/Google-Clamps-Down-on-Ads-for-Spyware-Stalkerware-86756.html"><img alt="Google restricts ads for spyware and stalking apps" data-c="a" src="/article_images/story_graphics_xlarge/xl-2018-online-advertising-1.jpg" width="620" height="360" border="0" /></a>
+			
+<div class="graphic-credit"><img src="/images/2015/image-credit-adobe-stock_130x15.gif" alt="" /></div>
+
+			</div>
+			<!--8-->
+			<div class="teaser"><!--teaser-->Advertising for software and hardware designed to stalk and spy on people will soon be banned on Google. Promotion of products or services that are marketed or targeted with the express purpose of tracking or monitoring another person or their activities without their authorization will be prohibited on the platform starting August 11.<!--/teaser--> <span class="story-link"><a class="story-link" href="/story/Google-Clamps-Down-on-Ads-for-Spyware-Stalkerware-86756.html">[More...]</a></span></div>
+			
+			</div>
+			 
+			<br />
+<div class="main-story-delimit"></div>
+
+			<div class="story-list xlarge shadow-big">
+			
+			<div class="title"><span class="story-storytype">OPINION</span><br /><a href="/story/The-Secrets-of-How-IBM-Maintains-AI-Leadership-86752.html"><!--title-->The Secrets of How IBM Maintains AI Leadership<!--/title--></a></div>
+			<div class="date">July 13, 2020</div>
+			<div class="image">
+			<a href="/story/The-Secrets-of-How-IBM-Maintains-AI-Leadership-86752.html"><img alt="IBM' artificial intelliegence" data-c="a" src="/article_images/story_graphics_xlarge/xl-2018-ai-brain-1.jpg" width="620" height="360" border="0" /></a>
+			
+<div class="graphic-credit"><img src="/images/2015/image-credit-adobe-stock_130x15.gif" alt="" /></div>
+
+			</div>
+			<!--9-->
+			<div class="teaser"><!--teaser-->IBM is chasing two of the three technology areas that I think will change the world as we know it over the next two decades. The three technology changes that I'm watching are robotics, AI computing, and quantum computing. IBM's focus has been on AI and quantum computing. I got an update on their AI efforts last week, and they have moved the ball a lot over the last few months.<!--/teaser--> <span class="story-link"><a class="story-link" href="/story/The-Secrets-of-How-IBM-Maintains-AI-Leadership-86752.html">[More...]</a></span></div>
+			
+			</div>
+			 
+			<br />
+<div class="main-story-delimit"></div>
+
+			<div class="story-list xlarge shadow-big">
+			
+			<div class="title"><span class="story-storytype">CONFERENCE ROUNDUP</span><br /><a href="/story/The-Linux-Foundations-First-Ever-Virtual-Open-Source-Summit-86754.html"><!--title-->The Linux Foundation's First-Ever Virtual Open Source Summit<!--/title--></a></div>
+			<div class="date">July 13, 2020</div>
+			<div class="image">
+			<a href="/story/The-Linux-Foundations-First-Ever-Virtual-Open-Source-Summit-86754.html"><img alt="linux foundation first virtual event" data-c="a" src="/article_images/story_graphics_xlarge/xl-2020-virtual-event-1.jpg" width="620" height="400" border="0" /></a>
+			
+<div class="graphic-credit"><img src="/images/2015/image-credit-adobe-stock_130x15.gif" alt="" /></div>
+
+			</div>
+			<!--10-->
+			<div class="teaser"><!--teaser-->The success of The Linux Foundation's first virtual summit may well have set the standard for new levels of open source participation. Summit masters closed the virtual doors of the four-day joint gathering on July 2. The event hosted the Open Source Summit + Embedded Linux Conference North America 2020 and ended with more than 4,000 registrants from 109 countries.<!--/teaser--> <span class="story-link"><a class="story-link" href="/story/The-Linux-Foundations-First-Ever-Virtual-Open-Source-Summit-86754.html">[More...]</a></span></div>
+			
+			</div>
+			 
+			<br />
+<div class="main-story-delimit"></div>
+
+			<div class="story-list xlarge shadow-big">
+			
+			<div class="title"><a href="/story/AI-Advantages-in-the-Wake-of-the-Pandemic-86751.html"><!--title-->AI Advantages in the Wake of the Pandemic<!--/title--></a></div>
+			<div class="date">July 10, 2020</div>
+			<div class="image">
+			<a href="/story/AI-Advantages-in-the-Wake-of-the-Pandemic-86751.html"><img alt="cognitive ai to monitor health and safety" src="/article_images/story_graphics_xlarge/xl-2020-cognize-1.jpg" width="620" height="400" border="0" /></a>
+			 
+			</div>
+			<!--11-->
+			<div class="teaser"><!--teaser-->Artificial intelligence will play a major role as we try to move to a post-pandemic world, especially as it pertains to tracking people's health and wellbeing in public areas. Employers will tap technology solutions to help them face challenges such as adhering to new rules and regulations, monitoring compliance, and ensuring employee confidence and morale remains positive.<!--/teaser--> <span class="story-link"><a class="story-link" href="/story/AI-Advantages-in-the-Wake-of-the-Pandemic-86751.html">[More...]</a></span></div>
+			
+			</div>
+			 
+			<br />
+<div class="main-story-delimit"></div>
+
+			<div class="story-list xlarge shadow-big">
+			
+			<div class="title"><a href="/story/Techs-Role-in-the-Future-of-Health-and-Public-Safety-86749.html"><!--title-->Tech's Role in the Future of Health and Public Safety<!--/title--></a></div>
+			<div class="date">July 9, 2020</div>
+			<div class="image">
+			<a href="/story/Techs-Role-in-the-Future-of-Health-and-Public-Safety-86749.html"><img alt="technology's role in the future of public safety" src="/article_images/story_graphics_xlarge/xl-2020-public-safety-1.jpg" width="620" height="380" border="0" /></a>
+			 
+			</div>
+			<!--12-->
+			<div class="teaser"><!--teaser-->Digital technologies can help shift health and public safety agencies from a "detect and respond" approach to a "predict and prevent" stratagem. They can also set the stage for a more connected and data-led approach through robust cybersecurity architectures, efficient remote workforces, and secure connectivity services.<!--/teaser--> <span class="story-link"><a class="story-link" href="/story/Techs-Role-in-the-Future-of-Health-and-Public-Safety-86749.html">[More...]</a></span></div>
+			
+			</div>
+			 
+			<br />
+<div class="main-story-delimit"></div>
+
+			<div class="story-list xlarge shadow-big">
+			
+			<div class="title"><a href="/story/John-McAfee-Emerges-With-Private-Cell-Phone-Data-Service-86747.html"><!--title-->John McAfee Emerges With Private Cell Phone Data Service<!--/title--></a></div>
+			<div class="date">July 8, 2020</div>
+			<div class="image">
+			<a href="/story/John-McAfee-Emerges-With-Private-Cell-Phone-Data-Service-86747.html"><img alt="John McAfee announces Ghost by McAfee" src="/article_images/story_graphics_xlarge/xl-2020-john-mcafee-1.jpg" width="620" height="370" border="0" /></a>
+			 
+			</div>
+			<!--13-->
+			<div class="teaser"><!--teaser-->The Ghost Cell Phone Data Service is part of a larger ecosystem which includes McAfee's Ghost cryptocurrency and GhostX Exchange for private cryptocurrency exchange.
+"The Ghost brand will encompass a range of practical, real world tools for people to protect our rights and take back our privacy," McAfee said. "Privacy is a human right."<!--/teaser--> <span class="story-link"><a class="story-link" href="/story/John-McAfee-Emerges-With-Private-Cell-Phone-Data-Service-86747.html">[More...]</a></span></div>
+			
+			</div>
+			 
+			<br />
+<div class="main-story-delimit"></div>
+
+			<div class="story-list xlarge shadow-big">
+			
+			<div class="title"><a href="/story/DHS-Brings-Web-App-to-Coronavirus-Fight-86743.html"><!--title-->DHS Brings Web App to Coronavirus Fight<!--/title--></a></div>
+			<div class="date">July 7, 2020</div>
+			<div class="image">
+			<a href="/story/DHS-Brings-Web-App-to-Coronavirus-Fight-86743.html"><img alt="web app predicts decay rate of coronavirus in the air" src="/article_images/story_graphics_xlarge/xl-2020-pandemic-family-1.jpg" width="620" height="400" border="0" /></a>
+			 
+			</div>
+			<!--14-->
+			<div class="teaser"><!--teaser-->The Department of Homeland Security, through its Science & Technology Directorate, has released a web app to help predict the decay rate of coronavirus in the air. The tool, entitled "Estimated Airborne Decay of SARS-CoV-2," accounts for the ambient temperature, relative humidity, and UV index in an outdoor environment to determine how much exposure time is required to "inactivate" certain proportions of aerosolized coronavirus.<!--/teaser--> <span class="story-link"><a class="story-link" href="/story/DHS-Brings-Web-App-to-Coronavirus-Fight-86743.html">[More...]</a></span></div>
+			
+			</div>
+			 
+			<br />
+<div class="main-story-delimit"></div>
+
+			<div class="story-list xlarge shadow-big">
+			
+			<div class="title"><a href="/story/The-Current-State-of-Open-Source-Testing-Tools-86742.html"><!--title-->The Current State of Open-Source Testing Tools<!--/title--></a></div>
+			<div class="date">July 7, 2020</div>
+			<div class="image">
+			<a href="/story/The-Current-State-of-Open-Source-Testing-Tools-86742.html"><img alt="" src="/article_images/story_graphics_xlarge/xl-2020-network-engineers-2.jpg" width="620" height="400" border="0" /></a>
+			 
+			</div>
+			<!--15-->
+			<div class="teaser"><!--teaser-->Tricentis and three survey project collaborators recently published findings that provide new insights on global trends in open-source testing. The study focused on the open-source tool testing industry, not how or if companies and software developers test their code. The results revealed that a lack of technical skills is the major roadblock to open-source tool adoption.<!--/teaser--> <span class="story-link"><a class="story-link" href="/story/The-Current-State-of-Open-Source-Testing-Tools-86742.html">[More...]</a></span></div>
+			
+			</div>
+			 
+			<br /><div id="earlier"><a href="/perl/archives/tnw/?init=12">More Stories...</a></div>
+<!--/styledpage-->
+<!--recreated sc-->
+	<!--/content-block-->
+	</div>
+<!--/content-main-->
+</div>
+
+<div id="content-nav">
+	
+	<div id="shortcuts" class="content-block">
+		<div class="headline-item">
+		<table cellpadding="0" cellspacing="0" border="0" width="100%" height="14"><tr><td align="left"><img src="//www.ectnews.com/images/2015/icon_mostpop_14x14roundcorner.png" width="14" height="14" border="0" /> <a class="headline" href="/perl/mostpop/">Most Popular</a></td><td align="center"><img src="//www.ectnews.com/images/2012/icon_newsletter_16x12.png" width="16" height="12" border="0" /> <a class="headline" href="https://www.ectnews.com/about/newsletters.xhtml">Newsletters</a></td><td align="right"><img src="//www.ectnews.com/images/2012/icon_alert_14x14.png" width="14" height="14" border="0" /> <a class="headline" href="https://www.ectnews.com/about/newsalerts/">News Alerts</a></td></tr></table>
+		</div>
+	</div>
+	
+	
+	
+	
+	<div class="right-bb">
+	
+	<!--ps: 107 crid: 10294:a-emg_tnw_300-1 cc:ng s_c:10293,10327 px:0-->
+	<div class="bbframe">
+<script type="text/javascript"><!--//<![CDATA[
+  var ados = ados || {};
+  ados.run = ados.run || [];
+  /* load placement for account: Neudesic Media Group, site: TechNewsWorld, size: 300x250 - Medium Rectangle */
+  ados.run.push(function() {
+    ados_addInlinePlacement(2072, 758477, 5).setRedirectUrl('-optional-click-macro-').loadInline();
+  });
+//]]>//--></script>
+<script type="text/javascript" src="https://static.adzerk.net/ados.js"><!--//<![CDATA[//]]>//--></script>
+</div>
+	<img class="ct-10294-a-emg_tnw_300-1" src="/adsys/count/10294/?nm=a-emg_tnw_300-1&amp;ENN_rnd=15955641359563&amp;ign=0/ign.gif" width="0" height="0" alt="" style="position:absolute; left:0px; top:0px" />
+	<!--/ps: 107 crid: 10294:a-emg_tnw_300-1 cc:ng-->
+	
+	</div>
+
+	
+
+			
+			<div class="survey" style="border: solid 1px #cbcbcb">
+			<div class="survey-description" style="background-color:#eeeeee;font-weight:bold">What bothers you most about your Internet Service Provider?</div>
+			<div class="survey-body" style="padding:5px">
+			<form>
+			<input type="hidden" name="survey_id" value="283" />
+			<table>
+			
+				<tr class="survey-opt" style="">
+				<td valign="top"><input type="radio" name="opt_id" value="1645" /></td><td>Customer support is substandard</td>
+				</tr>
+		
+				<tr class="survey-opt" style="">
+				<td valign="top"><input type="radio" name="opt_id" value="1646" /></td><td>Data caps are too restrictive</td>
+				</tr>
+		
+				<tr class="survey-opt" style="">
+				<td valign="top"><input type="radio" name="opt_id" value="1647" /></td><td>Internet connection is unreliable</td>
+				</tr>
+		
+				<tr class="survey-opt" style="">
+				<td valign="top"><input type="radio" name="opt_id" value="1648" /></td><td>Pricing plans lack value</td>
+				</tr>
+		
+				<tr class="survey-opt" style="">
+				<td valign="top"><input type="radio" name="opt_id" value="1649" /></td><td>Speed is inadequate</td>
+				</tr>
+		
+			</table>
+			<div class="survey-vote"><button onclick="return ENN_vote(this.form)">Vote to See Results</button></div>
+			</form>
+			</div>
+			</div>
+			
+	
+	<div class="content-tab border-ect"><a class="content-block-intro" href="https://www.ecommercetimes.com/">E-Commerce Times</a></div>
+	<div class="content-block">
+	
+			<div class="headline-item" id="rhd-86769">
+			<a href="http://www.ecommercetimes.com/story/86769.html" >Panic Buying Sparks New E-Tail Strategies</a>
+			</div>
+			
+
+			<div class="headline-item" id="rhd-86762">
+			<a href="http://www.ecommercetimes.com/story/86762.html" >Fitness Products Shatter Online Sales Records During Lockdown</a>
+			</div>
+			
+
+			<div class="headline-item" id="rhd-86760">
+			<a href="http://www.ecommercetimes.com/story/86760.html" >New E-Commerce Partnership Gives U.S. Merchants Access to LATAM</a>
+			</div>
+			
+
+			<div class="headline-item" id="rhd-86757">
+			<a href="http://www.ecommercetimes.com/story/86757.html" >How to Win at E-Commerce on the New Walmart.com</a>
+			</div>
+			
+
+			<div class="headline-item" id="rhd-86744">
+			<a href="http://www.ecommercetimes.com/story/86744.html" >The Art of Sewing's Hi-Tech Revival</a>
+			</div>
+			
+
+			<div class="headline-item" id="rhd-86746">
+			<a href="http://www.ecommercetimes.com/story/86746.html" >Website Development Contracts, Part 4: Indemnification</a>
+			</div>
+			
+
+			<div class="headline-item" id="rhd-86750">
+			<a href="http://www.ecommercetimes.com/story/86750.html" >Digital Fraud Flourishing During Pandemic: Report</a>
+			</div>
+			
+
+			<div class="headline-item" id="rhd-86748">
+			<a href="http://www.ecommercetimes.com/story/86748.html" >More Autonomous Cloud From Oracle</a>
+			</div>
+			
+	</div>
+
+	<div class="right-bb">
+	
+	<!--ps: 71 crid: 10294:a-emg_tnw_300-1 cc:ng s_c:10294,10293,10327 px:0-->
+	<div class="bbframe">
+<script type="text/javascript"><!--//<![CDATA[
+  var ados = ados || {};
+  ados.run = ados.run || [];
+  /* load placement for account: Neudesic Media Group, site: TechNewsWorld, size: 300x250 - Medium Rectangle */
+  ados.run.push(function() {
+    ados_addInlinePlacement(2072, 758477, 5).setRedirectUrl('-optional-click-macro-').loadInline();
+  });
+//]]>//--></script>
+<script type="text/javascript" src="https://static.adzerk.net/ados.js"><!--//<![CDATA[//]]>//--></script>
+</div>
+	<img class="ct-10294-a-emg_tnw_300-1" src="/adsys/count/10294/?nm=a-emg_tnw_300-1&amp;ENN_rnd=15955641351926&amp;ign=0/ign.gif" width="0" height="0" alt="" style="position:absolute; left:0px; top:0px" />
+	<!--/ps: 71 crid: 10294:a-emg_tnw_300-1 cc:ng-->
+	
+	</div>
+	
+	<div class="content-tab border-cad"><a class="content-block-intro" href="https://www.crmbuyer.com/">CRM Buyer</a></div>
+	<div class="content-block">
+	
+			<div class="headline-item" id="rhd-86765">
+			<a href="http://www.crmbuyer.com/story/86765.html" >Salesforce Ups Its Marketing Game</a>
+			</div>
+			
+
+			<div class="headline-item" id="rhd-86763">
+			<a href="http://www.crmbuyer.com/story/86763.html" >Refocus Your Sales Strategy on the Phone Call</a>
+			</div>
+			
+
+			<div class="headline-item" id="rhd-86753">
+			<a href="http://www.crmbuyer.com/story/86753.html" >Improving Company Performance</a>
+			</div>
+			
+
+			<div class="headline-item" id="rhd-86739">
+			<a href="http://www.crmbuyer.com/story/86739.html" >B2C Response Rates at SMBs Crushing Enterprises</a>
+			</div>
+			
+
+			<div class="headline-item" id="rhd-86736">
+			<a href="http://www.crmbuyer.com/story/86736.html" >The Trail to the Platform</a>
+			</div>
+			
+
+			<div class="headline-item" id="rhd-86724">
+			<a href="http://www.crmbuyer.com/story/86724.html" >Let's Rethink Our Relationship With CRM</a>
+			</div>
+			
+
+			<div class="headline-item" id="rhd-86716">
+			<a href="http://www.crmbuyer.com/story/86716.html" >Time to Beef Up Your Algorithms</a>
+			</div>
+			
+
+			<div class="headline-item" id="rhd-86710">
+			<a href="http://www.crmbuyer.com/story/86710.html" >The WFH Model Is Changing Customer Service for Good</a>
+			</div>
+			
+	</div>
+
+	<div class="right-bb">
+	
+	<!--ps: 108 crid: 10294:a-emg_tnw_300-1 cc:ng s_c:10294,10293,10327 px:0-->
+	<div class="bbframe">
+<script type="text/javascript"><!--//<![CDATA[
+  var ados = ados || {};
+  ados.run = ados.run || [];
+  /* load placement for account: Neudesic Media Group, site: TechNewsWorld, size: 300x250 - Medium Rectangle */
+  ados.run.push(function() {
+    ados_addInlinePlacement(2072, 758477, 5).setRedirectUrl('-optional-click-macro-').loadInline();
+  });
+//]]>//--></script>
+<script type="text/javascript" src="https://static.adzerk.net/ados.js"><!--//<![CDATA[//]]>//--></script>
+</div>
+	<img class="ct-10294-a-emg_tnw_300-1" src="/adsys/count/10294/?nm=a-emg_tnw_300-1&amp;ENN_rnd=15955641351706&amp;ign=0/ign.gif" width="0" height="0" alt="" style="position:absolute; left:0px; top:0px" />
+	<!--/ps: 108 crid: 10294:a-emg_tnw_300-1 cc:ng-->
+	
+	</div>
+
+	<div class="content-tab border-lni"><a class="content-block-intro" href="https://www.linuxinsider.com/">LinuxInsider</a></div>
+	<div class="content-block">
+	
+			<div class="headline-item" id="rhd-86626">
+			<a href="http://www.linuxinsider.com/story/86626.html" >Bodhi's Modular Moksha Desktop Is Modern and Elegant</a>
+			</div>
+			
+
+			<div class="headline-item" id="rhd-86619">
+			<a href="http://www.linuxinsider.com/story/86619.html" >GitHub Expands Free Feature Access, Slices Other Costs</a>
+			</div>
+			
+
+			<div class="headline-item" id="rhd-86613">
+			<a href="http://www.linuxinsider.com/story/86613.html" >MakuluLinux Flash 2020 Could Be an Xfce Desktop Game-Changer</a>
+			</div>
+			
+
+			<div class="headline-item" id="rhd-86598">
+			<a href="http://www.linuxinsider.com/story/86598.html" >LMDE4: How Much Does Debian Matter?</a>
+			</div>
+			
+
+			<div class="headline-item" id="rhd-86583">
+			<a href="http://www.linuxinsider.com/story/86583.html" >AryaLinux Provides the Building Blocks for a Unique Linux Experience</a>
+			</div>
+			
+
+			<div class="headline-item" id="rhd-86565">
+			<a href="http://www.linuxinsider.com/story/86565.html" >Zorin OS Core Makes GNOME More Comfortable</a>
+			</div>
+			
+
+			<div class="headline-item" id="rhd-86577">
+			<a href="http://www.linuxinsider.com/story/86577.html" >Open Source Tech Rushes to Front Lines of COVID-19 War</a>
+			</div>
+			
+
+			<div class="headline-item" id="rhd-86564">
+			<a href="http://www.linuxinsider.com/story/86564.html" >Report: Open Source Vulnerabilities Rampant in Popular Projects</a>
+			</div>
+			
+	</div>
+	
+	
+	<!--ps: 172 crid: 3217:a_sponsored_links cc:ng s_c:10294,10293,10327 px:0-->
+	
+<!-- slinks -->
+	<div class="content-tab-slinks">POPULAR RESOURCES</div>
+	<div class="content-block-slinks">
+
+				<div class="slink-title">What is the ROI of PIM?</div>
+				<div class="slink-text"><a href="" onclick=" { ENN_ad_wo(10351,'15955641356080'); return false; }" onmouseover="status='https://www.inriver.com/resources/calculate-your-roi-2/?utm_source=ecommercetimes&amp;utm_medium=onlinemedia&amp;utm_campaign=2020-q1-na-campaign-roi-calculator-ecommercetimestextads'; return true;" onmouseout="status=''; return true;"  ><img src="/images/sda/inriver_60x60.jpg" width="60" height="60" border="0" align="right" />
+Save money and get products to market faster with a PIM. Calculate your ROI now.</a><img class="ct-10351-a-inriver_stl-2" src="/adsys/count/10351/?nm=a-inriver_stl-2&amp;ENN_rnd=15955641356080&amp;ign=0/ign.gif" width="0" height="0" alt="" style="position:absolute; left:0px; top:0px" /></div>
+				
+
+				<div class="slink-title">Marketers - Fill Your Sales Funnel Instantly</div>
+				<div class="slink-text"><a href="" onclick=" { ENN_ad_wo(8781,'15955641356080'); return false; }" onmouseover="status='https://www.ectnews.com/perl/ratecard.pl?lead_gen=1'; return true;" onmouseout="status=''; return true;"  ><img src="/images/sda/sales-funnel_60x60.jpg" width="60" height="60" border="0" align="right" />
+Access millions of  IT and business decision makers. Our full-service global marketing program delivers sales-ready leads. Learn more.</a><img class="ct-8781-instaleads-stl-1" src="/adsys/count/8781/?nm=instaleads-stl-1&amp;ENN_rnd=15955641356080&amp;ign=0/ign.gif" width="0" height="0" alt="" style="position:absolute; left:0px; top:0px" /></div>
+				
+	</div>
+<!-- /slinks -->
+
+	<img class="ct-3217-a_sponsored_links" src="/adsys/count/3217/?nm=a_sponsored_links&amp;ENN_rnd=15955641356080&amp;ign=0/ign.gif" width="0" height="0" alt="" style="position:absolute; left:0px; top:0px" />
+	<!--/ps: 172 crid: 3217:a_sponsored_links cc:ng-->
+	
+
+	<div class="right-bb">
+	
+	<!--ps: 126 crid: 10294:a-emg_tnw_300-1 cc:ng s_c:3217,10294,10293,10327 px:0-->
+	<div class="bbframe">
+<script type="text/javascript"><!--//<![CDATA[
+  var ados = ados || {};
+  ados.run = ados.run || [];
+  /* load placement for account: Neudesic Media Group, site: TechNewsWorld, size: 300x250 - Medium Rectangle */
+  ados.run.push(function() {
+    ados_addInlinePlacement(2072, 758477, 5).setRedirectUrl('-optional-click-macro-').loadInline();
+  });
+//]]>//--></script>
+<script type="text/javascript" src="https://static.adzerk.net/ados.js"><!--//<![CDATA[//]]>//--></script>
+</div>
+	<img class="ct-10294-a-emg_tnw_300-1" src="/adsys/count/10294/?nm=a-emg_tnw_300-1&amp;ENN_rnd=15955641355650&amp;ign=0/ign.gif" width="0" height="0" alt="" style="position:absolute; left:0px; top:0px" />
+	<!--/ps: 126 crid: 10294:a-emg_tnw_300-1 cc:ng-->
+	
+	</div>
+	
+	<div class="hslice" id="tnwheadlines"><a rel="feedurl" href="/shared_cs/navsliceupdate.xhtml" style="display:none;"></a><div class="entry-title" style="display:none">TechNewsWorld Headlines</div>
+
+	</div>
+
+ 
+	<div class="right-bb">
+	
+	</div>
+
+
+</div>
+
+</div>
+
+
+
+<div id="content-bottom">
+
+<a name="inside-site"></a>
+
+	
+	<div id="lb2">
+	
+	<!--ps: 18 crid: 10293:a-emg_tnw_728-1 cc:ng s_c:3217,10294,10293,10327 px:0-->
+	<script type="text/javascript"><!--//<![CDATA[
+  var ados = ados || {};
+  ados.run = ados.run || [];
+  /* load placement for account: Neudesic Media Group, site: TechNewsWorld, size: 728x90 - Leaderboard */
+  ados.run.push(function() {
+    ados_addInlinePlacement(2072, 758477, 4).setRedirectUrl('-optional-click-macro-').loadInline();
+  });
+//]]>//--></script>
+<script type="text/javascript" src="https://static.adzerk.net/ados.js"><!--//<![CDATA[//]]>//--></script>
+	<img class="ct-10293-a-emg_tnw_728-1" src="/adsys/count/10293/?nm=a-emg_tnw_728-1&amp;ENN_rnd=15955641351980&amp;ign=0/ign.gif" width="0" height="0" alt="" style="position:absolute; left:0px; top:0px" />
+	<!--/ps: 18 crid: 10293:a-emg_tnw_728-1 cc:ng-->
+	
+	</div>
+	
+
+
+
+<!-- elapsed: 0  -->
+<!-- sctime: sc.hires_time() _  -->
+
+
+
+<div class="headlines-section-intro">Inside TechNewsWorld</div>
+<table class="headlines-section" id="headlines-section" cellspacing="0">
+	<!--cached:-->
+		<tr>
+							
+	<td valign="top"><div><a href="/perl/section/computing/">Computing <!--tnw--></a></div>
+	<ul>
+			
+								<li><a class="headline" href="/story/computing/86767.html">Rancher Labs and Fujitsu Form Kubernetes Partnership as Suse Readies Merger</a></li>
+								<li><a class="headline" href="/story/computing/86741.html">New DoD Security Regulations Have Ramifications for IT Contractors</a></li>
+								<li><a class="headline" href="/story/computing/86737.html">Austrumi Linux Is Loaded With Language Laziness</a></li>
+							
+	</ul>
+			
+				</td>
+		
+							
+	<td valign="top"><div><a href="/perl/section/data-management/">Data Management <!--tnw--></a></div>
+	<ul>
+			
+								<li><a class="headline" href="/story/data-management/86728.html">B2C Marketers Grapple With Personalization Tactics</a></li>
+								<li><a class="headline" href="/story/data-management/86726.html">Twitter Apologies for Data Security Incident</a></li>
+								<li><a class="headline" href="/story/data-management/86709.html">New Flaws in Intel's CPU Software Guard Extensions Revealed</a></li>
+							
+	</ul>
+			
+				</td>
+		
+							
+	<td valign="top"><div><a href="/perl/section/emerging-tech/">Emerging Tech <!--tnw--></a></div>
+	<ul>
+			
+								<li><a class="headline" href="/story/emerging-tech/86715.html">Sellers Prep for Continued Storm of E-Commerce Activity</a></li>
+								<li><a class="headline" href="/story/emerging-tech/86705.html">Apple to Design Its Own ARM-Based Mac Chips</a></li>
+								<li><a class="headline" href="/story/emerging-tech/86697.html">Rethinking Remote Education</a></li>
+							
+	</ul>
+			
+				</td>
+			
+	</tr>
+
+
+		
+		<tr>
+							
+	<td valign="top"><div><a href="/perl/section/exclusives/">Exclusives</a></div>
+	<ul>
+			
+								<li><a class="headline" href="/story/exclusives/86664.html">From Hobby to Career Path: Tech-Savvy HS Sophomore Learns by Doing</a></li>
+								<li><a class="headline" href="/story/exclusives/86463.html">Televerde's Michelle Cirocco: 'Invest in Disempowered Populations'</a></li>
+								<li><a class="headline" href="/story/exclusives/86373.html">ISACA Board Member Gabriela Reynaga on Gender, Tech and Perceptions</a></li>
+							
+	</ul>
+			
+				</td>
+		
+							
+	<td valign="top"><div><a href="/perl/section/hardware/">Hardware <!--tnw--></a></div>
+	<ul>
+			
+								<li><a class="headline" href="/story/hardware/86723.html">Macs Move to Apple Silicon Announced at WWDC</a></li>
+								<li><a class="headline" href="/story/hardware/86720.html">Cisco and the Importance of Empathy in a Technology Vendor</a></li>
+								<li><a class="headline" href="/story/hardware/86717.html">Qualcomm Introduces 5G and AI-Enabled Robotics Platform</a></li>
+							
+	</ul>
+			
+				</td>
+		
+							
+	<td valign="top"><div><a href="/perl/section/internet-of-things/">Internet of Things <!--tnw--></a></div>
+	<ul>
+			
+								<li><a class="headline" href="/story/internet-of-things/86665.html">How to Solve WiFi Speed and Connection Problems</a></li>
+								<li><a class="headline" href="/story/internet-of-things/86529.html">Linux-Powered Azure IoT Security Platform Arrives</a></li>
+								<li><a class="headline" href="/story/internet-of-things/86494.html">Philips Hue Vulnerability Shines Light on Possible IoT Security Nightmare</a></li>
+							
+	</ul>
+			
+				</td>
+			
+	</tr>
+
+
+		
+		<tr>
+							
+	<td valign="top"><div><a href="/perl/section/it-leadership/">IT Leadership <!--tnw--></a></div>
+	<ul>
+			
+								<li><a class="headline" href="/story/it-leadership/86729.html">Open Source Security Issues Exist: Deal With Them, Report Urges</a></li>
+								<li><a class="headline" href="/story/it-leadership/86460.html">The CEO of the Decade</a></li>
+								<li><a class="headline" href="/story/it-leadership/86270.html">Leaked Audio Reveals Zuckerberg Spinning Hard</a></li>
+							
+	</ul>
+			
+				</td>
+		
+							
+	<td valign="top"><div><a href="/perl/section/mobile-tech/">Mobile Tech <!--tnw--></a></div>
+	<ul>
+			
+								<li><a class="headline" href="/story/mobile-tech/86745.html">Uber Eats Postmates for $2.6B, Bolsters Ground Game</a></li>
+								<li><a class="headline" href="/story/mobile-tech/86727.html">Nintendo to Retreat From Mobile Gaming: Report</a></li>
+								<li><a class="headline" href="/story/mobile-tech/86685.html">Apple-Google Contact Tracing App Gets First Trial in Switzerland</a></li>
+							
+	</ul>
+			
+				</td>
+		
+							
+	<td valign="top"><div><a href="/perl/section/science/">Science <!--tnw--></a></div>
+	<ul>
+			
+								<li><a class="headline" href="/story/science/86735.html">The Changing Dynamics of Essential Product Sourcing</a></li>
+								<li><a class="headline" href="/story/science/86718.html">Teen Inventors Tackle Viability of Commercial Drones</a></li>
+								<li><a class="headline" href="/story/science/86714.html">Amazon's Distance Assistant Keeps Workers Aware of Proper Social Spacing</a></li>
+							
+	</ul>
+			
+				</td>
+			
+	</tr>
+
+
+		
+		<tr>
+							
+	<td valign="top"><div><a href="/perl/section/features/">Spotlight Features</a></div>
+	<ul>
+			
+								<li><a class="headline" href="/story/features/86711.html">The Strange, Meandering Journey to Online Speech Regulation</a></li>
+								<li><a class="headline" href="/story/features/86706.html">Virtual House Calls: The Rise of Telemedicine</a></li>
+								<li><a class="headline" href="/story/features/86668.html">How to Stay Safe on the Internet, Part 4: Fighting the Power</a></li>
+							
+	</ul>
+			
+				</td>
+		
+							
+	<td valign="top"><div><a href="/perl/section/tech-buzz/">Tech Buzz <!--tnw--></a></div>
+	<ul>
+			
+								<li><a class="headline" href="/story/tech-buzz/86740.html">Mercedes + Nvidia Could Catch Tesla and Create a Truly Smart Car</a></li>
+								<li><a class="headline" href="/story/tech-buzz/86731.html">Twitter's Security Blunder: More Dangerous Than You Think</a></li>
+								<li><a class="headline" href="/story/tech-buzz/86707.html">Tech Products That Make It Easier to Stay Home</a></li>
+							
+	</ul>
+			
+				</td>
+		
+							
+	<td valign="top"><div><a href="/perl/section/women-in-tech/">Women In Tech <!--tnw--></a></div>
+	<ul>
+			
+								<li><a class="headline" href="/story/women-in-tech/86721.html">Creators of Fashionable PPE Join Forces for Good</a></li>
+								<li><a class="headline" href="/story/women-in-tech/86654.html">IBM's Strategic Approach to Diversity</a></li>
+								<li><a class="headline" href="/story/women-in-tech/86631.html">HP's COVID-19 Response: There Should Be an Award for This</a></li>
+							
+	</ul>
+			
+				</td>
+			
+	</tr>
+
+
+	</table>
+
+
+
+
+	
+	<div id="lb3" class="lb2">
+	
+	<!--ps: 164 crid: 10293:a-emg_tnw_728-1 cc:ng s_c:3217,10294,10293,10327 px:0-->
+	<script type="text/javascript"><!--//<![CDATA[
+  var ados = ados || {};
+  ados.run = ados.run || [];
+  /* load placement for account: Neudesic Media Group, site: TechNewsWorld, size: 728x90 - Leaderboard */
+  ados.run.push(function() {
+    ados_addInlinePlacement(2072, 758477, 4).setRedirectUrl('-optional-click-macro-').loadInline();
+  });
+//]]>//--></script>
+<script type="text/javascript" src="https://static.adzerk.net/ados.js"><!--//<![CDATA[//]]>//--></script>
+	<img class="ct-10293-a-emg_tnw_728-1" src="/adsys/count/10293/?nm=a-emg_tnw_728-1&amp;ENN_rnd=15955641362674&amp;ign=0/ign.gif" width="0" height="0" alt="" style="position:absolute; left:0px; top:0px" />
+	<!--/ps: 164 crid: 10293:a-emg_tnw_728-1 cc:ng-->
+	
+	</div>
+	
+
+
+</div>
+</div>
+</div>
+
+<div id="footer-container">
+<div id="footer">
+
+	<table class="headlines-section publication-info">
+	<tr>
+	<td valign="top"><div><a href="https://www.ectnews.com/about/advertising/#publications">Publications</a></div>
+	<ul>
+	<li><a class="headline" href="https://www.crmbuyer.com/">CRM Buyer</a></li>
+	<li><a class="headline" href="https://www.ecommercetimes.com/">E-Commerce Times</a></li>
+	<li><a class="headline" href="https://www.linuxinsider.com/">LinuxInsider</a></li>
+	<li><a class="headline" href="https://www.technewsworld.com/">TechNewsWorld</a></li>
+
+	</ul>
+	<div id="bottom-logo" style="position: absolute;width:455px; height:125px; margin-top:10px"><a href="https://www.ectnews.com/"><img src="/images/2013/enn-logo-bottom.png" align="left" width="455" height="125" border="0" style="margin-left: -5px;" alt="ECT News Network" /></a></div>
+
+	</td>
+	<td valign="top" style="padding-left:50px"><div><a href="https://www.ectnews.com/about/newsletters.xhtml">Newsletters</a></div>
+	<ul>
+	<li><a class="headline" href="https://lp.constantcontactpages.com/su/axVwPYf/EcommerceMinute?source_id=ae4c20aa-296f-4347-91ea-3c9ea552d171&source_type=em&c=">E-Commerce Minute</a></li>
+	<li><a class="headline" href="https://lp.constantcontactpages.com/su/TFH4rVy/TechNewsFlash?source_id=ae4c20aa-296f-4347-91ea-3c9ea552d171&source_type=em&c=">Tech News Flash</a></li>
+	<li><a class="headline" href="https://lp.constantcontactpages.com/su/U1kaHbw/ECTNewsNetworkWeekly?source_id=ae4c20aa-296f-4347-91ea-3c9ea552d171&source_type=em&c=">ECT News Network Weekly</a></li>
+	<li><a class="headline" href="https://lp.constantcontactpages.com/su/D7Cw9Iz/EditorsPick?source_id=ae4c20aa-296f-4347-91ea-3c9ea552d171&source_type=em&c=">Editor's Pick</a></li>
+	<li><a class="headline" href="https://www.ectnews.com/about/newsletters.xhtml">Subscribe</a></li>
+	</ul>
+	</td>
+
+	<td valign="top">
+	<div>Reader Services</div>
+	<ul>
+	<li><a class="headline" href="https://www.ectnews.com/perl/User.pl">Account Management</a></li>
+	<li><a class="headline" href="https://www.ectnews.com/perl/board/mboard.pl">Discussion</a></li>
+	<li><a class="headline" href="https://www.ectnews.com/about/editorial-calendar.xhtml">Editorial Calendar</a></li>
+	<li><a class="headline" href="https://www.ectnews.com/about/link-to-us.xhtml">Linking Policy</a></li>
+	<li><a class="headline" href="https://www.ectnews.com/about/network_map.xhtml">Network Map</a></li>
+	<li><a class="headline" href="https://www.ectnews.com/about/newsalerts/">News Alerts</a></li>
+	<li><a class="headline" href="https://www.ectnews.com/about/link-to-us.xhtml#rss">RSS / XML Feeds</a></li>
+	<li><a class="headline" href="https://www.ectnews.com/perl/search.pl">Search ECT News Network</a></li>
+	</ul>
+	<table cellpadding="0" cellspacing="0" border="0">
+		<tr>
+		<td><a href="http://www.linkedin.com/company/ect-news-network" target="_blank"><img src="/images/2013/navicon-linkedin_20x20-gray.png" width="20" height="20" border="0" alt="LinkedIn" /></a></td>
+		<td><a href="https://www.twitter.com/technewsworld" target="_blank"><img src="/images/2013/navicon-twitter_20x20-gray.png" width="20" height="20" border="0" alt="Twitter" /></a></td>
+		<td><a href="https://www.facebook.com/ectnews" target="_blank"><img src="/images/2013/navicon-facebook_20x20-gray.png" width="20" height="20" border="0" alt="Facebook" /></a></td>
+		<td><a href="http://www.ectnews.com/about/link-to-us.xhtml#rss" target="_blank"><img src="/images/2013/navicon-rss_20x20-gray.png" width="20" height="20" border="0" alt="RSS" /></a></td>
+		</tr>
+	</table>
+	</td>
+	<td valign="top" style="padding-left:10px"><div>Company Info</div>
+	<ul>
+	<li><a class="headline" href="https://www.ectnews.com/about/">About</a></li>
+	<li><a class="headline" href="https://www.ectnews.com/about/advertising/">Advertising</a></li>
+	<li><a class="headline" href="https://www.ectnews.com/about/bizdev.xhtml">Business Development</a></li>
+	<li><a class="headline" href="https://www.ectnews.com/about/careers.xhtml">Careers</a></li>
+	<li><a class="headline" href="https://www.ectnews.com/about/#contact">Contact</a></li>
+	<li><a class="headline" href="https://www.ectnews.com/about/permissions.xhtml">Permissions</a></li>
+	<li><a class="headline" href="https://www.ectnews.com/about/reprints/">Reprint Information</a></li>
+	</ul>
+	</td>
+	</tr>
+	</table>
+	<div id="bottom-copyright">
+		<div style="float:right;">
+		<a class="bottom-copyright" href="https://www.ectnews.com/about/terms-of-service.xhtml">Terms of Service</a> | <a class="bottom-copyright" href="https://www.ectnews.com/about/privacy.xhtml">Privacy Policy</a> | <a class="bottom-copyright" href="http://www.ectnews.com/about/advertising/">How To Advertise</a>
+		</div>
+		Copyright 1998-2020 ECT News Network, Inc. All Rights Reserved.
+
+	</div>
+</div>
+</div>
+
+
+
+
+
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4750620.js"></script>
+<!-- End of HubSpot Embed Code -->
+</body>
 </html>
